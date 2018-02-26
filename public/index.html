@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sockets</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 offset-sm-2">
+				<br>
+				<h1 class="text-center">QuihuboApp</h1>
+				<br>
+				<div id="messages"></div>
+				<br>
+				<div>
+					<!-- <form onsubmit="return addMessage(this)">
+						<input type="text" id="username" placeholder="Nombre">
+						<input type="text" id="texto" placeholder="Escribe algo...">
+						<button type="submit" class="btn btn-primary">Enviar</button>
+					</form> -->
+
+					<form onsubmit="return addMessage(this)">
+					  <div class="form-group">
+					    <label>Nombre</label>
+					    <input type="text" class="form-control" id="username" placeholder="Tu Nombre">
+					  </div>
+					  <div class="form-group">
+					    <label >Mensaje</label>
+					    <input type="text" class="form-control" id="texto" placeholder="Escribe tu mensaje...">
+					  </div>
+					  <div class="text-right">
+					  	<button type="submit" class="btn btn-primary text-right">Enviar</button>
+					  </div>
+					  
+					</form>
+				</div>
+					
+			</div>
+		</div>
+	</div>
+				
+</body>
+</html>
